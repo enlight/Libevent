@@ -1609,7 +1609,7 @@ class CCodeGenerator:
 
 class Usage(RpcGenError):
     def __init__(self, argv0):
-        RpcGenError.__init__("usage: %s input.rpc [[output.h] output.c]"
+        RpcGenError.__init__(self, "usage: %s input.rpc [[output.h] output.c]"
                              % argv0)
 
 class CommandLine:
